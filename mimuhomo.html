@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>gay</title>
+	</head>
+	<body>
+		<h1 id="money">500</h1>
+		<input type="text" id="am">
+		<button onClick="cf()">COINFLIP</button>
+
+		<script type="text/javascript">
+			var balance = 500
+			function cf() {
+				var coin = Math.floor(Math.random() * 2);
+				if (parseInt(document.getElementById('am').value) <= balance && 0 < parseInt(document.getElementById('am').value)) {
+					if (coin == 0) {
+						balance -= parseInt(document.getElementById('am').value)
+					} else {
+						balance += parseInt(document.getElementById('am').value)
+					}
+				
+				}
+				if (isNaN(parseInt(document.getElementById('am').value))) {
+					if (coin == 0) {
+						balance = 0
+					} else {
+						balance *= 2
+					}
+
+				}
+				document.getElementById('money').innerHTML = balance
+			}
+
+		</script>
+	</body>
+</html>
