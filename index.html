@@ -7,7 +7,8 @@
 	<body>
 		<h1 id="money">500</h1>
 		<h2 id="streak">Current Streak: 0</h2>
-		<h2 id="highest">Highest Streak: 0</h2>
+		<h2 id="highestb">Highest Balance: 500</h2>
+		<h2 id="highests">Highest Streak: 0</h2>
 		<input type="text" id="am">
 		<button onClick="cf()">COINFLIP</button>
 		</br>
@@ -16,7 +17,8 @@
 		<script type="text/javascript">
 			var balance = 500
 			var streak = 0
-			var highest = 0
+			var highestb = 500
+			var highests = 0
 			function cf() {
 				var coin = Math.floor(Math.random() * 2);
 				if (parseInt(document.getElementById('am').value) <= balance && 0 < parseInt(document.getElementById('am').value) && balance != 0) {
@@ -42,21 +44,27 @@
 					}
 
 				}
-				if (streak >= highest) {
-					highest = streak
+				if (streak >= highests) {
+					highests = streak
+				}
+				if (balance >= highestb) {
+					highestb = balance
 				}
 				document.getElementById('money').innerHTML = balance
 				document.getElementById('streak').innerHTML = "Current Streak: " + streak
-				document.getElementById('highest').innerHTML = "Highest Streak: " + highest
+				document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
+				document.getElementById('highests').innerHTML = "Highest Streak: " + highests
 			}
 			
 			function ref() {
 				balance = 500
 				streak = 0
-				highest = 0
+				highestb = 500
+				highests = 0
 				document.getElementById('money').innerHTML = balance
 				document.getElementById('streak').innerHTML = "Current Streak: " + streak
-				document.getElementById('highest').innerHTML = "Highest Streak: " + highest
+				document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
+				document.getElementById('highests').innerHTML = "Highest Streak: " + highests
 			}
 
 		</script>
