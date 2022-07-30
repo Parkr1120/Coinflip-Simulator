@@ -1,11 +1,8 @@
+.labelcenter {
+	background-color: red;
+}
+
 body {
 	background-color: #3A3B3C;
 
-}
-
-.labelcenter {
-	text-align: center;
-}
-#money {
-	text-align: center;
 }
