@@ -8,6 +8,8 @@
 		<h1 id="money">500</h1>
 		<input type="text" id="am">
 		<button onClick="cf()">COINFLIP</button>
+		</br>
+		<button onClick="ref()">restart</button>
 
 		<script type="text/javascript">
 			var balance = 500
@@ -29,6 +31,11 @@
 					}
 
 				}
+				document.getElementById('money').innerHTML = balance
+			}
+			
+			function ref() {
+				balance = 500
 				document.getElementById('money').innerHTML = balance
 			}
 
