@@ -33,7 +33,7 @@ function cf() {
 	if (balance >= highestb) {
 		highestb = balance
 	}
-	document.getElementById('money').innerHTML = balance
+	document.getElementById('money').innerHTML = "Balance: " + balance
 	document.getElementById('streak').innerHTML = "Current Streak: " + streak
 	document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
 	document.getElementById('highests').innerHTML = "Highest Streak: " + highests
@@ -42,6 +42,6 @@ function cf() {
 function ref() {
 	balance = 500
 	streak = 0
-	document.getElementById('money').innerHTML = balance
+	document.getElementById('money').innerHTML = "Balance: " + balance
 	document.getElementById('streak').innerHTML = "Current Streak: " + streak
 }
