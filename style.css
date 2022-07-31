@@ -62,8 +62,14 @@ button {
 
 .perc {
 	margin: 0 auto;
+	font-family: Helvetica;
+	font-size: 20px;
 }
 
+.label {
+	font-family: Helvetica;
+	font-size: 17px;
+}
 
 /* coloring */
 #money {
