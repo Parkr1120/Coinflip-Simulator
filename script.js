@@ -9,9 +9,11 @@ function cf(bet) {
 
 	var coin = Math.floor(Math.random() * 2)    // picks either 0 or 1, representing heads or tails
 	var result = document.getElementById("res") // creates a reference to the p with id res for easy access
+	var allin = false
 
 	if (isNaN(parseInt(document.getElementById('am').value)) && balance != 0) {
 		document.getElementById('am').value = balance
+		var allin = true
 	}
 
 	// determines if you have enough money to bet
@@ -91,6 +93,11 @@ function cf(bet) {
 	result.classList.remove('flash')
 	void result.offsetWidth
 	result.classList.add('flash')
+
+	// gets rid of the text in text box if you went all in
+	if (allin) {
+		document.getElementById('am').value = ""
+	}
 }
 
 // restart function
