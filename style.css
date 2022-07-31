@@ -1,12 +1,12 @@
 .labelcenter {
 	text-align: center;
+	color:  gray;
 }
 
 #money {
-	color: darkslateblue;
+	color: lightgray;
 }
 
 body {
 	background-color: #3A3B3C;
-
 }
