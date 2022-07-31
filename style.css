@@ -28,7 +28,7 @@ h3 {
 }
 
 /* styles the buttons to look nice */
-.flip {
+button {
 	width: auto;
 	height: auto;
 	border-width: 2px;
@@ -37,17 +37,6 @@ h3 {
 	border-radius: 5px;
 	background-color: lightgray;
 	font-size: 20px;
-}
-
-.upgradebutton {
-	width: auto;
-	height: auto;
-	border-width: 2px;
-	border-style: solid;
-	border-color: gray;
-	border-radius: 5px;
-	background-color: lightgray;
-	font-size: 15px;
 }
 
 /* creates the panel around the buttons and stuff */
@@ -61,7 +50,6 @@ h3 {
 	padding: 10px;
 	
 }
-
 
 /* fixes button positioning */
 .h {

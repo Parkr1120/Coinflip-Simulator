@@ -28,16 +28,14 @@
 
 			<!-- a div pertaining to buttons and inputs for betting !-->
 			<div id="bets">
-				
-
 				<div id="flippanel">
 					<label for="am" class="labelcenter label">Enter bid amount (none for all in):</label>
 					<br>
 					<input type="number" min=1 step=1 id="am" name="am" class="labelcenter">
 					<br>
-					<button onClick="cf('heads')" class="h flip">Heads</button>
+					<button onClick="cf('heads')" class="h">Heads</button>
 					<p id="res">Flip!</p>
-					<button onClick="cf('tails')" class="t flip">Tails</button>
+					<button onClick="cf('tails')" class="t">Tails</button>
 					<br><br>
 					<p class="h perc" id="headperc">0%</p>
 					<p class="t perc" id="tailperc">0%</p>
@@ -46,13 +44,10 @@
 
 				
 				<br><br>
-				<button onClick="ref()" class="labelcenter flip">Restart</button>
+				<button onClick="ref()" class="labelcenter">Restart</button>
 			</div>
-			
 
 		</div>
-
-		
 
 		<!-- links the script.js file to be used for javascript !-->
 		<script type="text/javascript" src="script.js"></script>

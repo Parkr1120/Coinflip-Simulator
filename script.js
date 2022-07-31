@@ -27,7 +27,7 @@ function cf(bet) {
 			if (bet == "tails") {
 
 				// increase balance and streak
-				balance += Math.floor(parseInt(document.getElementById('am').value)*(gainpercent/100))
+				balance += parseInt(document.getElementById('am').value)
 				streak += 1
 				tailstotal += 1
 
@@ -39,7 +39,7 @@ function cf(bet) {
 			} else {
 
 				// decrease balance and reset streak
-				balance -= Math.floor(parseInt(document.getElementById('am').value)*(losspercent/100))
+				balance -= parseInt(document.getElementById('am').value)
 				streak = 0
 				tailstotal += 1
 
@@ -55,7 +55,7 @@ function cf(bet) {
 			if (bet == "heads") {
 
 				// increase balance and streak
-				balance += Math.floor(parseInt(document.getElementById('am').value)*(gainpercent/100))
+				balance += parseInt(document.getElementById('am').value)
 				streak += 1
 				headstotal += 1
 
@@ -67,7 +67,7 @@ function cf(bet) {
 			} else {
 
 				// decrease balance and reset streak
-				balance -= Math.floor(parseInt(document.getElementById('am').value)*(losspercent/100))
+				balance -= parseInt(document.getElementById('am').value)
 				streak = 0
 				headstotal += 1
 
@@ -99,7 +99,6 @@ function cf(bet) {
 	document.getElementById('headperc').innerHTML = Math.floor(headstotal/fliptotal*100) + "%"
 	document.getElementById('tailperc').innerHTML = Math.floor(tailstotal/fliptotal*100) + "%"
 
-
 	//play animation
 	result.classList.remove('flash')
 	void result.offsetWidth
@@ -120,4 +119,3 @@ function ref() {
 	document.getElementById('money').innerHTML = "Balance: " + balance
 	document.getElementById('streak').innerHTML = "Current Streak: " + streak
 }
-
