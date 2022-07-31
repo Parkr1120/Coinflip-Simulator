@@ -12,13 +12,13 @@ function cfh() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Tails"
-			result.style.color = red
+			result.style.color = "red"
 		} else {
 			balance += parseInt(document.getElementById('am').value)
 			streak += 1
 
 			document.getElementById("res").innerHTML="Heads"
-			result.style.color = lime
+			result.style.color = "lime"
 		}
 	
 	}
@@ -29,13 +29,13 @@ function cfh() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Tails"
-			result.style.color = red
+			result.style.color = "red"
 		} else {
 			balance *= 2
 			streak += 1
 
 			document.getElementById("res").innerHTML="Heads"
-			result.style.color = lime
+			result.style.color = "lime"
 		}
 
 	}
@@ -45,17 +45,15 @@ function cfh() {
 	if (balance >= highestb) {
 		highestb = balance
 	}
+
 	document.getElementById('money').innerHTML = "Balance: " + balance
 	document.getElementById('streak').innerHTML = "Current Streak: " + streak
 	document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
 	document.getElementById('highests').innerHTML = "Highest Streak: " + highests
 
-
-
 	result.classList.remove('flash')
 	void result.offsetWidth
 	result.classList.add('flash')
-
 }
 
 function cft() {
@@ -68,14 +66,14 @@ function cft() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Heads"
-			result.style.color = red
+			result.style.color = "red"
 
 		} else {
 			balance += parseInt(document.getElementById('am').value)
 			streak += 1
 
 			document.getElementById("res").innerHTML="Tails"
-			result.style.color = lime
+			result.style.color = "lime"
 		}
 	
 	}
@@ -86,13 +84,13 @@ function cft() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Heads"
-			result.style.color = red
+			result.style.color = "red"
 		} else {
 			balance *= 2
 			streak += 1
 
 			document.getElementById("res").innerHTML="Tails"
-			result.style.color = lime
+			result.style.color = "lime"
 		}
 
 	}

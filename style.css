@@ -61,17 +61,18 @@ button {
 	display: inline-block;
 	font-size: 20px;
 	font-family: Helvetica;
+	opacity: 0;
 	
 }
 
 .flash {
-	animation:  flash 1s;
+	animation:  flash .5s;
 }
 
 @keyframes flash {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  0% { opacity: 1; }
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  0% { opacity: 0; }
 }
 
 body {
