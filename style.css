@@ -34,6 +34,13 @@ button {
 	font-size: 20px;
 }
 
+#flippanel {
+	background-color: blanchedalmond;
+	border-raius: 10px;
+	border-color: gray;
+	border-width: 2px;
+}
+
 #money {
 	color: lightgray;
 }
