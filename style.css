@@ -1,5 +1,11 @@
+div.wrapper {
+	position: absolute;
+}
+
 .labelcenter {
-	text-align: center;
+	position: relative;
+	display: block;
+	margin : 0 auto;
 	color:  gray;
 }
 
