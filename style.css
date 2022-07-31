@@ -45,6 +45,14 @@ button {
 	
 }
 
+#h {
+	float: left;
+}
+
+#t {
+	float: right;
+}
+
 #money {
 	color: lightgray;
 }
