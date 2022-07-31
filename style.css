@@ -7,10 +7,31 @@ div.wrapper {
 	display: block;
 	margin : 0 auto;
 	text-align: center;
+	font-family:  Helvetica;
+	font
 }
 
 #stats {
 	color:  gray;
+}
+
+h2 {
+	font-size:  35px;
+}
+
+h3 {
+	font-size:  20px;
+}
+
+button {
+	width: auto;
+	height: auto;
+	border-width: 2px;
+	border-style: solid;
+	border-color: gray;
+	border-radius: 5px;
+	background-color: lightgray;
+	font-size: 20px;
 }
 
 #money {
