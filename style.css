@@ -36,9 +36,13 @@ button {
 
 #flippanel {
 	background-color: blanchedalmond;
-	border-raius: 10px;
+	border-radius: 10px;
 	border-color: gray;
 	border-width: 2px;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px;
+	
 }
 
 #money {
@@ -47,4 +51,5 @@ button {
 
 body {
 	background-color: #3A3B3C;
+	text-align: center;
 }
