@@ -2,7 +2,9 @@ var balance = 500  // starting money
 var streak = 0     // streak (flips won in a row)
 var highestb = 500 // record balance
 var highests = 0   // record streak
-
+var fliptotal = 0  // how many total flips
+var headstotal = 0 // how many total heads flips
+var tailstotal = 0 // how many total tails flips
 
 // function for clicking heads. literally the same as tails but a tiny difference
 function cf(bet) {
@@ -27,6 +29,7 @@ function cf(bet) {
 				// increase balance and streak
 				balance += parseInt(document.getElementById('am').value)
 				streak += 1
+				tailstotal += 1
 
 				// anim prep
 				document.getElementById("res").innerHTML="Tails"
@@ -38,6 +41,7 @@ function cf(bet) {
 				// decrease balance and reset streak
 				balance -= parseInt(document.getElementById('am').value)
 				streak = 0
+				tailstotal += 1
 
 				//anim prep
 				document.getElementById('res').innerHTML="Tails"
@@ -53,6 +57,7 @@ function cf(bet) {
 				// increase balance and streak
 				balance += parseInt(document.getElementById('am').value)
 				streak += 1
+				headstotal += 1
 
 				// anim prep
 				document.getElementById("res").innerHTML="Heads"
@@ -64,6 +69,7 @@ function cf(bet) {
 				// decrease balance and reset streak
 				balance -= parseInt(document.getElementById('am').value)
 				streak = 0
+				headstotal += 1
 
 				// anim prep
 				document.getElementById('res').innerHTML="Heads"
@@ -72,6 +78,8 @@ function cf(bet) {
 			}
 			
 		}
+
+		fliptotal += 1
 	
 	}
 
@@ -88,6 +96,8 @@ function cf(bet) {
 	document.getElementById('streak').innerHTML = "Current Streak: " + streak
 	document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
 	document.getElementById('highests').innerHTML = "Highest Streak: " + highests
+	document.getElementById('headperc').innerHTML = Math.floor(headstotal/fliptotal*100) + "%"
+	document.getElementById('tailperc').innerHTML = Math.floor(tailstotal/fliptotal*100) + "%"
 
 	//play animation
 	result.classList.remove('flash')

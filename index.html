@@ -23,21 +23,27 @@
 				<h3 id="highestb" class="labelcenter">Highest Balance: 500</h3>
 				<h3 id="streak" class="labelcenter">Current Streak: 0</h3>
 				<h3 id="highests" class="labelcenter">Highest Streak: 0</h3>
-				</br>
+				<br>
 			</div>
 
 			<!-- a div pertaining to buttons and inputs for betting !-->
 			<div id="bets">
 				<div id="flippanel">
 					<label for="am" class="labelcenter">Enter bid amount (none for all in):</label>
-					</br>
+					<br>
 					<input type="number" min=1 step=1 id="am" name="am" class="labelcenter">
-					</br>
-					<button onClick="cf('heads')" class="labelcenter" id="h">Heads</button>
+					<br>
+					<button onClick="cf('heads')" class="h">Heads</button>
 					<p id="res">Flip!</p>
-					<button onClick="cf('tails')" class="labelcenter" id="t">Tails</button>
+					<button onClick="cf('tails')" class="t">Tails</button>
+					<br><br>
+					<p class="h perc" id="headperc">0</p>
+					<p class="t perc" id="tailperc">0</p>
+					
 				</div>
-				</br></br>
+
+				
+				<br><br>
 				<button onClick="ref()" class="labelcenter">Restart</button>
 			</div>
 

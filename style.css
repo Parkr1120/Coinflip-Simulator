@@ -52,13 +52,18 @@ button {
 }
 
 /* fixes button positioning */
-#h {
+.h {
 	float: left;
 }
 
-#t {
+.t {
 	float: right;
 }
+
+.perc {
+	margin: 0 auto;
+}
+
 
 /* coloring */
 #money {
@@ -71,8 +76,9 @@ button {
 	font-size: 20px;
 	font-family: Helvetica;
 	opacity: 0;
-	
+	margin: 0;
 }
+
 
 /* makes the result flash when you bet */
 .flash {
