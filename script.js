@@ -4,6 +4,7 @@ var highestb = 500
 var highests = 0
 function cfh() {
 	var coin = Math.floor(Math.random() * 2);
+	result = document.getElementById("res")
 	if (parseInt(document.getElementById('am').value) <= balance && 0 < parseInt(document.getElementById('am').value) && balance != 0) {
 		if (coin == 0) {
 			balance -= parseInt(document.getElementById('am').value)
@@ -11,12 +12,13 @@ function cfh() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Tails"
-
+			result.style.color = red
 		} else {
 			balance += parseInt(document.getElementById('am').value)
 			streak += 1
 
 			document.getElementById("res").innerHTML="Heads"
+			result.style.color = lime
 		}
 	
 	}
@@ -27,11 +29,13 @@ function cfh() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Tails"
+			result.style.color = red
 		} else {
 			balance *= 2
 			streak += 1
 
 			document.getElementById("res").innerHTML="Heads"
+			result.style.color = lime
 		}
 
 	}
@@ -46,7 +50,7 @@ function cfh() {
 	document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
 	document.getElementById('highests').innerHTML = "Highest Streak: " + highests
 
-	result = document.getElementById("res")
+
 
 	result.classList.remove('flash')
 	void result.offsetWidth
@@ -55,6 +59,7 @@ function cfh() {
 }
 
 function cft() {
+	result = document.getElementById("res")
 	var coin = Math.floor(Math.random() * 2);
 	if (parseInt(document.getElementById('am').value) <= balance && 0 < parseInt(document.getElementById('am').value) && balance != 0) {
 		if (coin == 0) {
@@ -63,12 +68,14 @@ function cft() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Heads"
+			result.style.color = red
 
 		} else {
 			balance += parseInt(document.getElementById('am').value)
 			streak += 1
 
 			document.getElementById("res").innerHTML="Tails"
+			result.style.color = lime
 		}
 	
 	}
@@ -79,11 +86,13 @@ function cft() {
 			streak = 0
 
 			document.getElementById("res").innerHTML="Heads"
+			result.style.color = red
 		} else {
 			balance *= 2
 			streak += 1
 
 			document.getElementById("res").innerHTML="Tails"
+			result.style.color = lime
 		}
 
 	}
@@ -98,7 +107,7 @@ function cft() {
 	document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
 	document.getElementById('highests').innerHTML = "Highest Streak: " + highests
 
-	result = document.getElementById("res")
+
 
 	result.classList.remove('flash')
 	void result.offsetWidth
