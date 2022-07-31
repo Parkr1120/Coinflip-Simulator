@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 
 <html>
+
 	<head>
-		<title>gay</title>
+
+		<!-- sets the webpage title !-->
+		<title>Coinflip Simulator</title>
+
+		<!-- uses the style.css file for styling !-->
 		<link rel="stylesheet" href="style.css">
+
 	</head>
+
 	<body>
+
+		<!-- a div of stuff thats centered !-->
 		<div id="wrapper">
+
+			<!-- a div containing all of the stats of the user !-->
 			<div id="stats">
 				<h2 id="money" class="labelcenter">Balance: 500</h2>
 				<h3 id="highestb" class="labelcenter">Highest Balance: 500</h3>
@@ -15,6 +26,7 @@
 				</br>
 			</div>
 
+			<!-- a div pertaining to buttons and inputs for betting !-->
 			<div id="bets">
 				<div id="flippanel">
 					<label for="am" class="labelcenter">Enter bid amount (none for all in):</label>
@@ -28,8 +40,11 @@
 				</br></br>
 				<button onClick="ref()" class="labelcenter">Restart</button>
 			</div>
+
 		</div>
 
+		<!-- links the script.js file to be used for javascript !-->
 		<script type="text/javascript" src="script.js"></script>
+
 	</body>
 </html>

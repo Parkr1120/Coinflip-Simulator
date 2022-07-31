@@ -1,20 +1,24 @@
+
+/* lets me specify positions of items inside the div */
 div.wrapper {
 	position: absolute;
 }
 
+/* centers everything with the class labelcenter, also sets font */
 .labelcenter {
 	position: relative;
 	display: block;
 	margin : 0 auto;
 	text-align: center;
 	font-family:  Helvetica;
-	font
 }
 
+/* colors some stuff in */
 #stats {
 	color:  gray;
 }
 
+/* resizing */
 h2 {
 	font-size:  35px;
 }
@@ -23,6 +27,7 @@ h3 {
 	font-size:  25px;
 }
 
+/* styles the buttons to look nice */
 button {
 	width: auto;
 	height: auto;
@@ -34,6 +39,7 @@ button {
 	font-size: 20px;
 }
 
+/* creates the panel around the buttons and stuff */
 #flippanel {
 	background-color: blanchedalmond;
 	border-radius: 10px;
@@ -45,6 +51,7 @@ button {
 	
 }
 
+/* fixes button positioning */
 #h {
 	float: left;
 }
@@ -53,10 +60,12 @@ button {
 	float: right;
 }
 
+/* coloring */
 #money {
 	color: lightgray;
 }
 
+/* positioning and styling of the flip result */
 #res {
 	display: inline-block;
 	font-size: 20px;
@@ -65,6 +74,7 @@ button {
 	
 }
 
+/* makes the result flash when you bet */
 .flash {
 	animation:  flash .5s;
 }
@@ -75,6 +85,7 @@ button {
   0% { opacity: 0; }
 }
 
+/* background color and centering stuff */
 body {
 	background-color: #3A3B3C;
 	text-align: center;
