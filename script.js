@@ -45,6 +45,13 @@ function cfh() {
 	document.getElementById('streak').innerHTML = "Current Streak: " + streak
 	document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
 	document.getElementById('highests').innerHTML = "Highest Streak: " + highests
+
+	result = document.getElementById("res")
+
+	result.classList.remove('flash')
+	void result.offsetWidth
+	result.classList.add('flash')
+
 }
 
 function cft() {
@@ -90,6 +97,12 @@ function cft() {
 	document.getElementById('streak').innerHTML = "Current Streak: " + streak
 	document.getElementById('highestb').innerHTML = "Highest Balance: " + highestb
 	document.getElementById('highests').innerHTML = "Highest Streak: " + highests
+
+	result = document.getElementById("res")
+
+	result.classList.remove('flash')
+	void result.offsetWidth
+	result.classList.add('flash')
 }
 
 function ref() {
